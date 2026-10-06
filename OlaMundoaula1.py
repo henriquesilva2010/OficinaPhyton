@@ -10,5 +10,4 @@ nota1=6.7
 nota2=4.2
 nota3=8.3
 media=(nota1+nota2+nota3)/3
-print (f"sua media e {media:.2f}") #":.Xf" para limitar a quantidade de algarismos
-
+print (f"sua media e {media:.2f}") #":.Xf" para limitar a quantidade de algarismo
