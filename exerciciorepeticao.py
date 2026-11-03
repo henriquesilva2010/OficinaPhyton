@@ -42,13 +42,15 @@ Enquanto a senha estiver incorreta, peça para digitar novamente. Quando acertar
 Considere a senha correta como 01234."""
 
 senha = "01234"
-resul =input("Insira a senha:")
+def senhaCorreta():
+    while True:
+        senha2= str(input("Digite a senha:"))
+        if senha == senha2:
+            break
+        else:
+            print("Senha Incorreta")
 
-while resul != senha:
-    print(f"Senha incorreta")
-    resul =input("Insira a senha:")
-print(f"Acesso permitido!")
-
+    
 """3. Tabuada — for e range()
 Peça ao usuário um número inteiro e mostre a tabuada desse número, de 1 a 10."""
 
@@ -63,3 +65,27 @@ Faça um programa que mostre todos os números pares de 0 até 20, utilizando fo
 for i in range (2,21,2):
     print(i)
 
+
+"""5. Soma dos números — for e range()
+Peça ao usuário um número inteiro positivo.
+Calcule e mostre a soma de todos os números de 1 até o número informado.
+Exemplo: se o usuário digitar 5, o resultado será 15 (1 + 2 + 3 + 4 + 5)."""
+
+nume=int(input( "Digite um numero inteiro possitivo:"))
+
+for i in range (1,nume+1,1):
+    print (i)
+
+"""6. Desafio — while e validação
+Faça um programa que peça números inteiros ao usuário. 
+O programa deve continuar recebendo números até que o usuário digite 0. 
+Ao final, mostre a soma de todos os números digitados, sem contar o zero."""
+
+nume=int(input( "Digite um numero inteiro:"))
+soma= 0
+while nume != 0:
+    soma= soma+nume
+    nume=int(input( "Digite um numero inteiro:"))
+print (soma)
+
+senhaCorreta()
